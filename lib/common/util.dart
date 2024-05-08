@@ -26,5 +26,11 @@ Map<int, String> _genreMap = {
   37: "Oeste"
 };
 
-List<String> genresToList(List<dynamic> genreIds) =>
+List<String?> genresToList(List<dynamic> genreIds) =>
     genreIds.map((id) => _genreMap[id]).toList();
+
+String getGenreValues(List<dynamic> genreIds) {
+  StringBuffer buffer = new StringBuffer();
+  buffer.writeAll(genresToList(genreIds), ", ");
+  return buffer.toString();
+}
