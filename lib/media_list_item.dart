@@ -69,7 +69,7 @@ class MediaListItem extends StatelessWidget {
                       children: <Widget>[
                         Row(
                           children: <Widget>[
-                            Text(media.voteAverage.toString()),
+                            Text(media.voteAverage.toStringAsPrecision(2)),
                             Container(width: 4,),
                             Icon(Icons.star, color: Colors.white, size: 16.0,)
                           ]

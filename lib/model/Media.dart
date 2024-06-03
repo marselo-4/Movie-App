@@ -1,5 +1,6 @@
 // Deserialize Json
 
+import 'package:movie_app/common/MediaProvider.dart';
 import 'package:movie_app/common/util.dart';
 
 class Media {
@@ -33,7 +34,7 @@ class Media {
   Media.deserialize(Map jsonMap, MediaType mediaType) {
     id = jsonMap["id"];
     voteAverage = jsonMap["vote_average"];
-    title = jsonMap["title"];
+    title = jsonMap[mediaType == MediaType.movie ? "title" : "name"];
     posterPath = jsonMap["poster_path"];
     backdropPath = jsonMap["backdrop_path"];
     overview = jsonMap["overview"];
@@ -51,7 +52,3 @@ class Media {
   //   gendreIds = json["genre_ids"].toList();
 }
 
-enum MediaType{
-  movie,
-  show
-}
