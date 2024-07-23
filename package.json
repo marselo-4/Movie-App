@@ -1,0 +1,26 @@
+{
+    "name": "flutter_web_app",
+    "version": "1.0.0",
+    "description": "A Flutter web application",
+    "main": "index.js",
+    "scripts": {
+      "deploy": "git subtree push --prefix build/web origin gh-pages"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/tu_usuario/tu_repositorio.git"
+    },
+    "keywords": [
+      "flutter",
+      "web",
+      "deploy",
+      "github-pages"
+    ],
+    "author": "Tu Nombre",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/tu_usuario/tu_repositorio/issues"
+    },
+    "homepage": "https://github.com/tu_usuario/tu_repositorio#readme"
+  }
+  
